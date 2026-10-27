@@ -160,5 +160,37 @@ modalImg.addEventListener('touchend', e => {
     touchX = null;
 });
 
+// Botón de correo: copia la dirección al portapapeles sin mostrarla en la página
+const copyBtn = document.querySelector('.copy-email');
+const copyTooltip = copyBtn.querySelector('.copy-tooltip');
+let tooltipTimer = null;
+
+function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text);
+    }
+    // Respaldo para navegadores sin la API del portapapeles
+    const area = document.createElement('textarea');
+    area.value = text;
+    area.setAttribute('readonly', '');
+    area.style.position = 'fixed';
+    area.style.opacity = '0';
+    document.body.append(area);
+    area.select();
+    const ok = document.execCommand('copy');
+    area.remove();
+    return ok ? Promise.resolve() : Promise.reject();
+}
+
+copyBtn.addEventListener('click', () => {
+    const email = `${copyBtn.dataset.user}@${copyBtn.dataset.domain}`;
+    copyText(email)
+        .then(() => { copyTooltip.textContent = '¡Correo copiado!'; })
+        .catch(() => { copyTooltip.textContent = email; });
+    copyTooltip.classList.add('show');
+    clearTimeout(tooltipTimer);
+    tooltipTimer = setTimeout(() => copyTooltip.classList.remove('show'), 2000);
+});
+
 // Año actual en el footer
 document.getElementById('year').textContent = new Date().getFullYear();
