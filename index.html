@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Galindo | Desarrollador Web</title>
+    <meta name="description" content="Portafolio de Kevin Galindo, desarrollador web junior y estudiante de Ingeniería en Computación.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Las animaciones solo ocultan el contenido si JavaScript funciona -->
+    <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+    <!-- Íconos de la página (estilo Lucide), incluidos aquí para que funcionen sin internet -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+        <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+        <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+        <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+        <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+        <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+        <symbol id="i-headphones" viewBox="0 0 24 24"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></symbol>
+        <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+        <symbol id="i-images" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    </svg>
+    <header>
+        <nav id="navbar">
+            <a href="#inicio" class="logo">Kevin <span>Galindo</span></a>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="hero-text reveal">
+                    <p class="hero-greeting">Hola, soy</p>
+                    <h1>Kevin Galindo</h1>
+                    <h2>Desarrollador Web Junior</h2>
+                    <p>Estudiante de Ingeniería en Computación. Apasionado por crear experiencias únicas y funcionales, y siempre buscando aprender más para poder mejorar.</p>
+                    <div class="hero-buttons">
+                        <a href="#contacto" class="btn">Contáctame</a>
+                        <a href="#proyectos" class="btn btn-outline">Ver proyectos</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/KevGF05" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+                        <a href="https://www.linkedin.com/in/kevin-o-galindo-39972a367/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+                    </div>
+                </div>
+                <div class="hero-image reveal">
+                    <img src="img/perfil.jpg" alt="Foto de Kevin Galindo">
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span>
+                    <h3>Desarrollo Web</h3>
+                    <ul class="tags">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-card reveal">
+                    <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-headphones"/></svg></span>
+                    <h3>Soporte Técnico</h3>
+                    <ul class="tags">
+                        <li>Troubleshooting</li>
+                        <li>Diagnóstico de sistemas</li>
+                        <li>Monitoreo de logs</li>
+                    </ul>
+                </div>
+                <div class="skill-card reveal">
+                    <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg></span>
+                    <h3>Herramientas</h3>
+                    <ul class="tags">
+                        <li>Git y GitHub</li>
+                        <li>Jira</li>
+                        <li>Grafana</li>
+                        <li>Zendesk</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia">
+            <h2 class="section-title">Experiencia Laboral</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="date">2023 - 2026</span>
+                        <h3>Líder de Equipo - Ingeniero de Service Desk</h3>
+                        <h4>Partner Hero America S. de R.L. · Cuenta Intersection</h4>
+                        <ul class="duties">
+                            <li>Aseguramiento de calidad y soporte técnico remoto para pantallas de publicidad digital en estaciones de tren, autobús y aeropuertos: validación de contenido, monitoreo de logs y análisis de causa raíz de incidencias reportadas por tickets.</li>
+                            <li>Coordinación con autoridades locales por correo para reportar hallazgos y dar seguimiento a los incidentes hasta su resolución.</li>
+                            <li>Colaboración con técnicos en sitio y con los equipos de Producto y Ad Operations en diagnóstico remoto, verificación de sistemas y pruebas funcionales de nuevo hardware y contenido antes de su implementación.</li>
+                            <li>Gestión y documentación de tickets con socios comerciales, incluyendo la adquisición de repuestos y el reemplazo de pantallas.</li>
+                            <li>Orientación y supervisión del equipo para asegurar que se siguieran los procedimientos de diagnóstico y QA.</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Zendesk</li>
+                            <li>Salesforce - Sitetracker</li>
+                            <li>Grafana</li>
+                            <li>Broadsign Control Admin</li>
+                            <li>Slack</li>
+                            <li>Google Workspace</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="date">2022 - 2023</span>
+                        <h3>Soporte al Cliente II</h3>
+                        <h4>Partner Hero America S. de R.L. · Cuenta Sweetgreen</h4>
+                        <ul class="duties">
+                            <li>Atención a clientes por correo electrónico y chat: pedidos, reembolsos y seguimiento de órdenes.</li>
+                            <li>Diagnóstico básico de las aplicaciones cuando no funcionaban correctamente.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="date">2020 - 2022</span>
+                        <h3>Asistente Administrativo</h3>
+                        <h4>Cable Digital</h4>
+                        <ul class="duties">
+                            <li>Resolución de problemas técnicos y gestión de contratos de servicio para clientes residenciales de internet y cable.</li>
+                            <li>Manejo del inventario y de la comunicación con proveedores.</li>
+                            <li>Investigación y coordinación de nuevos equipos, y apoyo en sus pruebas e instalación.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="date">2019 - 2020</span>
+                        <h3>Representante de Servicio al Cliente</h3>
+                        <h4>Startek · Cuentas Liberty Power y Amazon</h4>
+                        <ul class="duties">
+                            <li>Liberty Power: atención a clientes con sus facturas de electricidad por teléfono y correo electrónico.</li>
+                            <li>Amazon: ayuda con pedidos, reembolsos y rastreo de paquetes; asesoría sobre productos y resolución de problemas de cuentas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2 class="section-title">Proyectos Personales</h2>
+            <div class="projects-container">
+                <article class="project-card reveal" tabindex="0" data-vertical
+                    data-images="img/appmunicipal/01-inicio.jpg,img/appmunicipal/02-reporte.jpg,img/appmunicipal/03-mapa.jpg,img/appmunicipal/04-seguimiento.jpg,img/appmunicipal/05-mis-reportes.jpg,img/appmunicipal/06-admin-dashboard.jpg,img/appmunicipal/07-admin-tickets.jpg,img/appmunicipal/08-admin-detalle.jpg,img/appmunicipal/09-tecnico-dashboard.jpg,img/appmunicipal/10-tecnico-historial.jpg"
+                    data-captions="Pantalla de inicio|Crear un reporte anónimo|Selección de ubicación en Google Maps|Seguimiento con el código del reporte|Reportes enviados desde el teléfono|Dashboard del administrador|Tickets filtrados por estado|Detalle del ticket con fotos inicial y final|Dashboard del técnico|Historial de trabajos del técnico">
+                    <div class="project-img">
+                        <img src="img/appmunicipal/portada.jpg" alt="Tres pantallas de App Municipal: inicio, mapa y lista de tickets" loading="lazy">
+                        <span class="gallery-hint"><svg class="icon" aria-hidden="true"><use href="#i-images"/></svg> 10 capturas</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>App Municipal de Reportes Viales</h3>
+                        <p>Aplicación Android para que los ciudadanos reporten problemas viales de forma anónima, con ubicación en Google Maps y fotografía. Cada reporte se convierte en un ticket: el administrador lo aprueba y lo asigna a un técnico, que lo cierra con foto y comentario finales. El ciudadano da seguimiento con un código.</p>
+                        <div class="project-tech">
+                            <span>Kotlin</span>
+                            <span>Android</span>
+                            <span>Spring Boot</span>
+                            <span>API REST</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KevGF05/AppMunicipal" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> Código</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card reveal" tabindex="0"
+                    data-images="img/syslog/01-dashboard.jpg,img/syslog/02-equipos.jpg,img/syslog/03-interfaces.jpg,img/syslog/04-alertas.jpg,img/syslog/05-reportes.jpg,img/syslog/06-usuarios.jpg"
+                    data-captions="Dashboard con contadores y últimas alertas|Registro y listado de equipos|Interfaces de red|Definición de alertas por severidad|Reportes por nodo y por alertas|Usuarios con acceso por rol">
+                    <div class="project-img">
+                        <img src="img/syslog/01-dashboard.jpg" alt="Dashboard de Syslog con contadores de infraestructura y últimas alertas" loading="lazy">
+                        <span class="gallery-hint"><svg class="icon" aria-hidden="true"><use href="#i-images"/></svg> 6 capturas</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Syslog - Monitoreo de Infraestructura</h3>
+                        <p>Panel administrativo para monitorear infraestructura de red organizada por empresas, ciudades, datacenters, nodos, equipos e interfaces. Incluye alertas por severidad, reportes, y gestión de usuarios y grupos con acceso por rol.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KevGF05/Syslog" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> Código</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card reveal" tabindex="0"
+                    data-images="img/veterinaria/01-inicio.jpg,img/veterinaria/02-agendar-cita.jpg,img/veterinaria/03-tienda.jpg,img/veterinaria/04-dashboard.jpg,img/veterinaria/05-citas.jpg,img/veterinaria/06-mascotas.jpg,img/veterinaria/07-productos.jpg,img/veterinaria/08-pedidos.jpg"
+                    data-captions="Página principal con los servicios|Formulario para agendar citas|Tienda en línea|Dashboard con gráficas|Gestión de citas|Registro de mascotas|Inventario de productos|Pedidos de la tienda">
+                    <div class="project-img">
+                        <img src="img/veterinaria/01-inicio.jpg" alt="Página principal del sitio de Veterinaria Integral" loading="lazy">
+                        <span class="gallery-hint"><svg class="icon" aria-hidden="true"><use href="#i-images"/></svg> 8 capturas</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sitio Web y Sistema de Veterinaria</h3>
+                        <p>Sitio web donde los clientes pueden agendar citas para sus mascotas, eligiendo fecha y tipo de cita. Incluye una tienda en línea con pago en línea o en tienda, y un sistema interno para el registro de mascotas, inventario, citas y ventas.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>CSS</span>
+                            <span>SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KevGF05/ProyectoVetrinaria" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> Código</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card reveal" tabindex="0"
+                    data-images="img/alcaldes/01-inicio.jpg,img/alcaldes/02-biografias.jpg,img/alcaldes/03-galeria.jpg,img/alcaldes/04-panel.jpg,img/alcaldes/05-gestion-alcaldes.jpg"
+                    data-captions="Página principal|Biografías de los alcaldes|Galería del museo|Panel de administración|Gestión de alcaldes">
+                    <div class="project-img">
+                        <img src="img/alcaldes/01-inicio.jpg" alt="Página principal del Museo Virtual de Alcaldes de El Progreso" loading="lazy">
+                        <span class="gallery-hint"><svg class="icon" aria-hidden="true"><use href="#i-images"/></svg> 5 capturas</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Museo Virtual de Alcaldes de El Progreso</h3>
+                        <p>Sitio web con la biografía de los alcaldes de El Progreso, Yoro. Tiene galería de imágenes, eventos con inscripción en línea, formulario de contacto con envío de correo y encuesta de satisfacción. Un panel de administración permite gestionar alcaldes, eventos, galería e inscritos.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>PHPMailer</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KevGF05/PaginaWebAlcaldes" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> Código</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-box reveal">
+                <p>¿Tienes un proyecto, una oportunidad laboral o simplemente quieres saludar? Escríbeme por cualquiera de estos medios.</p>
+                <div class="contact-links">
+                    <!-- Para agregar tu correo, descomenta esta línea y pon tu dirección:
+                    <a href="mailto:kevinogalindof@gmail.com" class="btn"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Correo</a>
+                    -->
+                    <a href="https://www.linkedin.com/in/kevin-o-galindo-39972a367/" target="_blank" rel="noopener" class="btn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg> LinkedIn</a>
+                    <a href="https://github.com/KevGF05" target="_blank" rel="noopener" class="btn btn-outline"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year">2026</span> Kevin Galindo - Todos los derechos reservados</p>
+            <div class="social-links">
+                <a href="https://github.com/KevGF05" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+                <a href="https://www.linkedin.com/in/kevin-o-galindo-39972a367/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="project-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+            <button class="modal-close" aria-label="Cerrar"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></button>
+            <div class="gallery">
+                <div class="gallery-main">
+                    <img class="gallery-img" src="" alt="">
+                    <button class="gallery-prev" aria-label="Captura anterior"><svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+                    <button class="gallery-next" aria-label="Captura siguiente"><svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+                </div>
+                <div class="gallery-bar">
+                    <span class="gallery-caption"></span>
+                    <span class="gallery-counter"></span>
+                </div>
+                <div class="gallery-thumbs"></div>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button class="btn btn-outline modal-back"><svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg> Volver a proyectos</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
