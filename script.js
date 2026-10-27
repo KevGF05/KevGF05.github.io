@@ -185,12 +185,16 @@ function copyText(text) {
 copyBtn.addEventListener('click', () => {
     const email = `${copyBtn.dataset.user}@${copyBtn.dataset.domain}`;
     copyText(email)
-        .then(() => { copyTooltip.textContent = '¡Correo copiado!'; })
-        .catch(() => { copyTooltip.textContent = email; });
+        .then(() => showTooltip('¡Correo copiado!'))
+        .catch(() => showTooltip(email)); // si no se pudo copiar, se muestra para copiarlo a mano
+});
+
+function showTooltip(text) {
+    copyTooltip.textContent = text;
     copyTooltip.classList.add('show');
     clearTimeout(tooltipTimer);
-    tooltipTimer = setTimeout(() => copyTooltip.classList.remove('show'), 2000);
-});
+    tooltipTimer = setTimeout(() => copyTooltip.classList.remove('show'), 2500);
+}
 
 // Año actual en el footer
 document.getElementById('year').textContent = new Date().getFullYear();
